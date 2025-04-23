@@ -1,0 +1,107 @@
+Hey! I want to build a complete Online Course Selling System with face authentication. The app will have three panels: Admin, Instructor, and User. Here's exactly what I want you to do:
+
+🧱 Tech Stack
+Frontend: Use Next.js 15 with the App Router and Tailwind CSS for styling.
+use only javascript not typescript
+
+Backend (Main): Use Node.js with Express.
+
+Backend (Face Auth only): Use Flask (Python), but make sure it works without TensorFlow, WebGL, or GPU. Only CPU processing is allowed.
+
+Database: MongoDB with Mongoose.
+
+Authentication: Use JWT for all logins and secure routes.
+
+Payments: Integrate Razorpay with complete payment flow and webhooks.
+
+🔐 Face Authentication Rules
+Build a separate Flask API for face recognition.
+
+Use the face_recognition Python library or something similar that runs on CPU only.
+
+No TensorFlow. No WebGL. No GPU.
+
+It should support:
+
+Face registration (upload/capture and save to database)
+
+Face login (match a live face with stored one)
+
+The Next.js frontend should communicate with this Flask API for all face-related auth.
+
+👥 User Roles
+🧑‍🎓 User Panel (Student):
+Browse courses
+
+View course details
+
+Enroll/purchase courses using Razorpay
+
+Watch videos (maybe embedded or stored securely)
+
+Face login option
+
+Track course progress
+
+Download certificates after completion
+
+👨‍🏫 Instructor Panel:
+Register/login with face or password
+
+Create, update, and delete courses
+
+Upload videos and course resources
+
+View enrolled students and revenue
+
+Basic dashboard analytics
+
+🧑‍💼 Admin Panel:
+Manage all users and instructors
+
+Approve or reject instructor accounts
+
+Moderate or remove any course
+
+See payment reports and platform analytics
+
+Full control dashboard
+
+💻 Routing Suggestions
+/login, /signup, /face-auth – Auth routes
+
+/admin, /instructor, /user – Dashboards for different roles
+
+/courses, /courses/:id, /create-course – Course routes
+
+🧠 Extra Guidelines
+The design should be clean, modern, responsive, and professional.
+
+Don’t use TensorFlow, WebGL, or GPU-based features.
+
+The face auth system should run fully offline using the CPU.
+
+All three panels should have their own dashboards and navigation.
+
+Razorpay integration must include both client-side and server-side logic, including success/failure handling.
+
+📦 Expected Output
+Full Next.js 15 frontend
+
+Express backend for main app logic
+
+Flask backend for face auth
+
+Razorpay fully working
+
+MongoDB schemas for users, courses, transactions, etc.
+
+Dashboard UI for each role
+
+JWT auth implemented
+
+Face auth API with routes like /register-face, /verify-face
+
+Clean folder structure and production-ready code
+
+use component based code
